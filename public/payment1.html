@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="css/payment.css">
+    <style>
+        /* Hide the GIF container initially */
+        #gif-container {
+            display: none; /* Hidden by default */
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Signature Spice</h2>
+            <div class="totalPrice">
+            <p class="price">₹<span id="totalAmount">0</span></p></div>
+        </div>
+        <hr>
+
+        <form id="payment-form">
+            <!-- Your existing form code -->
+            <div class="payment-option">
+                <input type="radio" id="qr-code" name="payment-method">
+                <label for="qr-code">Show QR Code</label>
+                <div id="qr-code-img" class="hidden">
+                    <img style="position: relative; margin-left: 80px;" src="images/QR_1.png" alt="QR Code" width="150">
+                </div>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="upi-id" name="payment-method" required>
+                <label for="upi-id">UPI ID</label>
+                <div class="payment">
+                    <img id="img_1" src="images/Paytem.png" alt="" width="55px" height="55px">
+                    <img id="img_2" src="images/googlePay.webp" alt="" width="55px" height="55px">
+                    <img id="img_3" src="images/PhonePay.gif" alt="" width="55px" height="50px">
+                </div>
+                <div id="upi-id-input" class="hidden">
+                    <label for="upi-id-text">Enter UPI ID</label>
+                    <input type="text" id="upi" placeholder="UPI ID                                 @">
+                    <select name="ybi" id="upi">
+                        <option value="ybi">@okybi</option>
+                        <option value="ybi">@oksbi</option>
+                        <option value="ybi">@okbob</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="card" name="payment-method" checked required>
+                <label for="card">Card</label>
+                <div id="card-details" class="card-details">
+                    <label for="card-number">Card number</label>
+                    <input type="text" id="card-number" placeholder="Enter your card number" required>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter card holder's full name" required>
+
+                    <div class="card-expiry">
+                        <div>
+                            <label for="expiry-month">Valid till</label>
+                            <input type="text" id="expiry-month" placeholder="MM" required>
+                        </div>
+                        <div>
+                            <input type="text" id="expiry-year" placeholder="YY" required>
+                        </div>
+                        <div>
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="CVV" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-option">
+                <input type="radio" id="net-banking" name="payment-method">
+                <label for="net-banking">Cash ON Delivery</label>
+                <p>Choose your bank to complete payment</p>
+            </div>
+            <button id="submit" type="button">PAY ₹<span id="payAmount">0</span></button>
+        </form>
+
+        <!-- Placeholder for GIF below the form -->
+        <div id="gif-container">
+            <img id="success-gif" src="images/verified.gif" alt="Table Booked" width="300">
+        </div>
+
+        <footer>
+            <p>Powered by <strong>PhonePe</strong></p>
+        </footer>
+    </div>
+
+    <script src="payment1.js"></script>
+    <script class="checkout.js"></script>
+    <script>
+        // fetch('/api/latest-order1')
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         document.getElementById('counter').innerText = data.counter;
+        //     })
+        //     .catch(error => console.error('Error fetching order summary:', error));
+
+        fetch('/api/latest-order1')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('totalAmount').innerText = data.totalAmount; // Display total amount
+                document.getElementById('payAmount').innerText = data.totalAmount; // Update the pay button
+            })
+            .catch(error => console.error('Error fetching order summary:', error));
+
+        
+    </script>
+</body>
+</html>

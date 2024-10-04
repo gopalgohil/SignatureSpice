@@ -1,0 +1,139 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.price {
+  font-size: 18px;
+  color: #ff6600;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.payment-option {
+  margin-bottom: 15px;
+}
+
+.payment-option input {
+  margin-right: 10px;
+}
+
+.card-details {
+  background-color: #f8f1ff;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.actions.hidden {
+  display: none;
+}
+
+.actions {
+  margin-top: 30px;
+  display: flex;
+}
+
+.actions button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 10px rgba(255, 99, 71, 0.5);
+}
+
+.actions button:hover {
+  background-color: #ff4500;
+  transform: translateY(-2px);
+}
+
+.card-details label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.card-details input {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-expiry {
+  display: flex;
+  justify-content: space-between;
+}
+.card-expiry div {
+  width: 30%;
+}
+button {
+  width: 100%;
+  background-color: #ff6600;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e65c00;
+}
+footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #888;
+}
+.hidden {
+  display: none;
+}
+#upi {
+  padding: 8px;
+}
+#expiry-year {
+  margin-top: 20px;
+}

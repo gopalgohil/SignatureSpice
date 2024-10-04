@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/feedback.css" />
+    <link
+      rel="shortcut icon"
+      href="main-logo.jpg"
+      type="image/x-icon"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Signature Spice</title>
+  </head>
+
+  <body style="background: url(images/bg-pattern.jpg);">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="images/footer_banner_4.png" alt="" class="logo-image" /></a>
+        </div>
+        <ul class="links">
+          <li><a href="orderNow.html" class="header_a">Order Now</a></li> 
+          <li><a href="location.html" class="header_a">Location</a></li> 
+          <li><a href="table_booking.html" class="header_a">Table Booking</a></li>
+          <li><a href="about.html" class="header_a">About Us</a></li>
+          <li><a href="feedback.html" class="header_a">Feedback</a></li>
+          <li><a href="contact.html" class="header_a">Contact Us</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="image">
+      <button id="feedb">FEEDBACK</button>
+      <img src="images/feedback-bg-jdp.jpg" class="feedback-image" />
+    </div>
+    <section>
+      <div class="main-form">
+        <div class="form-text">
+          <h2>FEEDBACK <span>FORM</span></h2>
+          <h5>Making happy people throug food</h5>
+        </div>
+        <div class="form-content">
+          <form action="/submit" method="post">
+            <input type="text" placeholder="Name *" name="name" class="name" id="name" required/>
+            <input
+              type="number"
+              placeholder="Contact-Number *"
+              class="contact" name="contact" id="contact"
+            required/><br />
+            <input type="date" placeholder="Date of Visit *" class="date" name="date" id="date" required/>
+            <label class="branch">Select Your reason *</label>
+            <select class="reason" id="reason" name="reason" >
+              <option value="Food">Food</option>
+              <option value="Services">Service</option>
+              <option value="Ambience">Ambience</option>
+              <option value="Other" >Others</option>
+            </select>
+          
+            <div class="ratings">
+              <p>How would you rate us on these parameters?*</p>
+              <div class="rating-group">
+                <label>Food:</label>
+                <div class="rating-options">
+                  <span>😞</span>
+                  <input type="radio" value="1" class="food_rating" id="food_rating" name="food_rating" required/> 1
+                  <input type="radio" value="2" class="food_rating" id="food_rating" name="food_rating"/> 2
+                  <input type="radio" value="3" class="food_rating" id="food_rating" name="food_rating"/> 3
+                  <input type="radio" value="4" class="food_rating" id="food_rating" name="food_rating"/> 4
+                  <input type="radio" value="5" class="food_rating" id="food_rating" name="food_rating"/> 5
+                  <span>😊</span>
+                </div>
+              </div>
+              <div class="rating-group">
+                <label>Ambiance:</label>
+                <div class="rating-options">
+                  <span>😞</span>
+                  <input type="radio" value="1" class="ambience" id="ambience" name="ambience" required /> 1
+                  <input type="radio" value="2" class="ambience" id="ambience" name="ambience"/> 2
+                  <input type="radio" value="3" class="ambience" id="ambience" name="ambience"/> 3
+                  <input type="radio" value="4" class="ambience" id="ambience" name="ambience"/> 4
+                  <input type="radio" value="5" class="ambience" id="ambience" name="ambience"/> 5
+                  <span>😊</span>
+                </div>
+              </div>
+              <div class="rating-group">
+                <label>Service:</label>
+                <div class="rating-options">
+                  <span>😞</span>
+                  <input type="radio"  value="1" class="service_rating" id="service_rating" name="service_rating" required /> 1
+                  <input type="radio"  value="2" class="service_rating" id="service_rating" name="service_rating"/> 2
+                  <input type="radio"  value="3" class="service_rating" id="service_rating" name="service_rating"/> 3
+                  <input type="radio"  value="4" class="service_rating" id="service_rating" name="service_rating"/> 4
+                  <input type="radio"  value="5" class="service_rating" id="service_rating" name="service_rating"/> 5
+                  <span>😊</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label id="comments">Do you have any feedback/suggestions for us:</label><br>
+              <input id="comment" name="comment" required></input>
+            </div>
+            <button type="submit" style="border-radius: 10px;">Send Message <span class="dot"></span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="main"></div>
+    <footer class="footer">
+      <div id="main_1">
+        <img id="img_3" src="images/footer_banner_4_home.png" alt="" />
+        <ul id="one">
+          <br />
+          <h3>Contact Details</h3>
+          <li>
+            19-A,MSU,<br />
+            Opp. Rajwadi Cha,<br />
+            Alkapuri-390045<br />
+            Gujarat, India.
+          </li>
+        </ul>
+        <ul>
+          <h3>Call US</h3>
+          <li>T : +91-9429408051</li>
+          <li>E : info@signaturespice.com</li>
+        </ul>
+        <br /><br />
+        <ul>
+          <h3>Social</h3>
+          <li>Facebook</li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+      <div class="bottom-header">
+        <a href="about.html">ABOUT</a>
+        
+        <a href="feedback.html">FEEDBACK</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+     
+    </footer>
+  </body>
+</html>

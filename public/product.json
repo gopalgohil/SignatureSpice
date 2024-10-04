@@ -1,0 +1,135 @@
+[
+    {
+        "id": 1,
+        "name": "Chili Garlic Noodles",
+        "price": 149.99,
+        "image": "images/Chili Garlic Noodles.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Chili Paneer",
+        "price": 169,
+        "image": "images/chilli paneer.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Chili Potato",
+        "price": 159.99,
+        "image": "images/Chilli Potato.jpeg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Chinese Bhel Receipe",
+        "price": 179.99,
+        "image": "images/Chinese Bhel Recipe.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Veg Manchurian",
+        "price": 199.99,
+        "image": "images/Veg Manchurian Gravy.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Vegetable Spring Rolls",
+        "price": 219.99,
+        "image": "images/Vegetable Spring Rolls.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "Gujarati-Delux-Thali",
+        "price": 129.99,
+        "image": "images/gujarati-delux-thali.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Gujarati Thali",
+        "price": 189.99,
+        "image": "images/gujarati-thali.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Undhiyu-Puri",
+        "price": 219.99,
+        "image": "images/undhiyu-puri.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Rumali Roti",
+        "price": 49.99,
+        "image": "images/Rumali roti.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "Palak Paneer",
+        "price": 159.99,
+        "image": "images/Palak Paneer.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Paneer Toofani",
+        "price": 169.99,
+        "image": "images/undhiyu-puri.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Tandoori Roti",
+        "price": 29.99,
+        "image": "images/tandoori roti.jpeg"
+    },
+    {
+        "id": 14,
+        "name": "Cheese Butter Masala",
+        "price": 219.99,
+        "image": "images/Cheese butter masala.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Paneer Pasanda",
+        "price": 219.99,
+        "image": "images/Paneer Pasanda.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Cheese Butter Masala",
+        "price": 219.99,
+        "image": "images/Cheese butter masala.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Idli Sambhar",
+        "price": 89.99,
+        "image": "images/idli sambhar.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Curd Rice",
+        "price": 129.99,
+        "image": "images/curd rice.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Masala Dhosa",
+        "price": 139.99,
+        "image": "images/masala dosa.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Medu-Vada",
+        "price": 99.99,
+        "image": "images/medu-vada.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Mysore-Masala Dhosa",
+        "price": 179.99,
+        "image": "images/mysore dosa.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Plain Dhosa",
+        "price": 119.99,
+        "image": "images/Plain Dosa.jpg"
+    }
+]

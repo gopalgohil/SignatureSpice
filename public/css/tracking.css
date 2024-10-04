@@ -1,0 +1,149 @@
+/* Main Layout */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+#home a{
+    list-style: none;text-decoration: none;
+    color: white;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.tracking-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.order-info p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Progress Bar */
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    position: relative;
+}
+
+/* Base line between steps */
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 4px;
+    background-color: lightgray;
+    z-index: -1;
+    transition: background-color 0.4s ease;
+}
+
+/* Filled line (animated) */
+.progress-bar .line-fill {
+    position: absolute;
+    top: 41%;
+    left: 10%;
+    height: 4px;
+    background-color: #ff6347;
+    z-index: 1;
+    transition: width 6s ease;
+}
+
+.line-fill.step-1 {
+    width: 0%;
+}
+
+.line-fill.step-2 {
+    width: 30%;
+}
+
+.line-fill.step-3 {
+    width: 50%;
+}
+
+.line-fill.step-4 {
+    width: 75%;
+}
+
+.step {
+    position: relative;
+    text-align: center;
+    width: 25%;
+}
+
+.step .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.step.completed .circle {
+    background-color: #ff6347;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 15px rgba(255, 99, 71, 0.8);
+}
+
+.step .label {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.step.completed .label {
+    color: #ff6347;
+    font-weight: bold;
+}
+
+.actions {
+    margin-top: 30px;
+}
+
+.actions button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(255, 99, 71, 0.5);
+}
+
+.actions button:hover {
+    background-color: #ff4500;
+    transform: translateY(-2px);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
